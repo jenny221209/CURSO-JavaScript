@@ -24,3 +24,4 @@ console.log (-3);
 
 // También puede obtener un número negativo restando un número de un número más pequeño-
 console.log (5 - 7);
+
