@@ -2,6 +2,7 @@
 
 // IF (SI)
 
+
 // if es un condicional en el que puede evaluar valores o datos según la condición.
 // puede ir acompañado de else y elseif.
 
@@ -13,6 +14,31 @@
 // Operador || (o)
 // Operador ! (negación)
 
+//SINTAXIS
+/*
+
+Ej1:
+if condicion{
+    haga esto
+}
+
+Ej2:
+if condicion {
+    haga esto
+}else{
+    haga esto
+}
+
+Ej3:
+if condicion{
+    haga esto
+}else if condicion {
+    haga esto
+}else{
+    haga esto
+}
+
+*/
 
 var nombre1 = "Andres";
 var numero1 = 2000;
