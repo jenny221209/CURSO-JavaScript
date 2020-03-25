@@ -33,3 +33,27 @@ for ( inicioBucle; inicioBucle<10; inicioBucle++){
 
     console.log(inicioBucle);
 }
+
+// Ejemplo 3
+console.log("Ejemplo 3");
+
+for (var i=0; i<10; i+=2){
+    console.log(i);
+}
+
+
+// Ejemplo 4
+console.log("Ejemplo 4");
+
+for (var i=10; i>0; i--) {
+
+    console.log(i);
+}
+
+// Ejemplo 5
+console.log("Ejemplo 5")
+
+for (var i=0; i<=3; i++) {
+
+    console.log(productoNC[i]);
+}
