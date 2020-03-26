@@ -11,19 +11,74 @@
     <p>2. Almacenar esos datos en variables</p>
     <p>3. Validar los campos</p>
     <p>4. Calcular la nota media</p>
-    <p>5. Mostrar un mensaje con los datos del usuario y su nota media</p>
-    <p>6. Mostrar un mensaje que diga "GANO LA MATERIA :)" "PERDIO LA MATERIA :("</p>
+    <p>5. Evaluar si es femenino o masculino y si es mayor de edad (switch)</p>
+    <p>6. Mostrar un mensaje con los datos del usuario y su nota media</p>
+    <p>7. Mostrar un mensaje que diga "GANO LA MATERIA :)" "PERDIO LA MATERIA :("</p>
 
-    <p>Nota: Edad y Sexo evaluar con switch y las validaciones con un while</p>
+    <p>Nota: Las validaciones con un while Edad y Sexo evaluar con switch </p>
 
     <script>
+
+        // Paso 1-2-3
+        // Solicitud de dato y alamcenando en variable
        var nombre = window.prompt("Nombre: ");
+        // While : Para bucle - isNaN (No es numerico) - ! Negación - !isNaN (Es numerico)
+        while (!isNaN(nombre)){
+            var nombre = window.prompt("error ingrese un nombre correcto")
+        }
        var edad = window.prompt("Edad: ");
+       while (isNaN(edad)) {
+           var edad = window.prompt("la edad no es correcta");
+       }
+
        var grado = window.prompt("Grado: ");
+           
        var sexo = window.prompt("Sexo: ");
        var nota1 = window.prompt("Nota1: ");
+       //validacion de nota1
+       while (isNaN(nota1)) {
+            var nota1 = window.prompt("la nota no es correcta");
+       }
+        //validacion de nota2
        var nota2 = window.prompt("Nota2: ");
+       while (isNaN(nota2)) {
+            var nota2 = window.prompt("la nota no es correcta");
+       }
+
+       //validacion de nota3
        var nota3 =window.prompt("Nota3: ");
+       while (isNaN(nota3)) {
+            var nota3 = window.prompt("la nota no es correcta");
+       }
+
+       // 4. Calculo matematico : Convertimos los valores de notas a números decimales con parsefloat, Primero sumamos las 3 notas y despues lo dividimos por el numero de notas que son 3.
+       var resultado = ( ( parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3) ) / 3);
+
+       // 5. Evaluar si es mayor de edad y si es femenino o masculino. (switch)
+       var mayor;
+
+       if ( edad >18 ){
+            mayor = ("Mayor de edad");
+       }else {
+           mayor = ("Menor de edad")
+       }
+
+       // 6. Mensaje con datos, edad y resultado media de la materia
+
+       window.alert ("Este es el nombre del usuario: " + nombre + " Y es " + mayor + " Grado: " + grado + " Sexo : " + sexo + " Nota 1: " + nota1 + " Nota 2: " + nota2 + " Nota 3: " + nota3 + " La nota final es: " + resultado);
+        
+       // 7. Evaluar si gano o no la materia
+
+       if ( resultado >2.9 ){
+           window.alert (" Gano la materia ");
+       }else {
+           window.alert (" Perdio la materia ");
+       }
+
+      
+
+
+
 
        
 

@@ -16,15 +16,21 @@
     </header>
 
     <script>
+
+        // Mensaje informativo que explica al usuario que se va hacer
         window.alert("Programa division - El programa pide 2 numeros y los divide")
+
+        // Se piden los numeros a dividir y se almacenan en variables 
         var numero1 = window.prompt("inserte el primer numero");
         var numero2 = window.prompt("inserte el segundo numero");
-        /*var numero3 = window.prompt("inserte el tercer numero");*/
+        
 
         var resultado = (parseInt(numero1) / parseInt(numero2));
 
+        // Mensaje donde se muestran los numeros que se ingresaron y el resultado de la división
         window.alert ("Estos son los numero que ingreso: " + numero1 + " ÷ " + numero2 + " ÷ " + "El resultado de la division es:" + resultado);
-
+        
+        // Mensaje donde se muestran los numeros que se ingresaron y el resultado de la division pero por consola
         console.log ("Estos son los numero que ingreso", numero1, numero2, "El resultado de la division es:", resultado);
     </script>
 </body>
