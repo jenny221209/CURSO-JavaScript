@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa:  cierre de caja</title>
+</head>
+<body>
+    <h2>Programa cierre de caja</h2>
+    <p>1. El usuario va a ingresar 3 ventas: venta 1, venta 2 y venta 3</p>
+    <p>2. Se va a ingresar 2 gastos: Gasto 1, Gasto 2</p>
+    <p>3. Las 3 ventas y los 2 gastos se van a almacenar en variables</p>
+    <p>4. Hacer el calculo (Ventas calcular y almacenar en una variable y gastos calcular y alamcenar en otra variable)</p>
+    <p>5. Hacer el calculo del resultado - (Ingresos totales - Gastos totales)</p>
+    <p>6. Mostrar un mensaje con el total de ventas, el total de gastos y cuanto fue el cierre de caja</p>
+
+
+    <script>
+        
+        // Paso 1 y 2
+
+        window.alert ("Programa de cierre caja pide ingresar sus 3 ventas")
+
+        var venta1 = window.prompt ("venta 1")
+        var venta2 = window.prompt ("venta 2")
+        var venta3 = window.prompt ("venta 3")
+        var gasto1 = window.prompt ("gasto 1")
+        var gasto2 = window.prompt ("gasto 2")
+
+        // paso 4
+
+        var resultadoventa = (  parseFloat(venta1) + parseFloat(venta2) + parseFloat(venta3) );
+             
+        var resultadogasto = (  parseFloat(gasto1) + parseFloat(gasto2) );
+
+        var resultadocierrecaja = ( parseFloat(resultadoventa) - parseFloat(resultadogasto) );
+
+        // paso 5
+
+        window.alert ("Su total de ventas es: " + resultadoventa + " Sus gastos fueron: "  + " El total del cierre caja es: " + resultadocierrecaja);
+  
+    </script>
+</body>
+</html>

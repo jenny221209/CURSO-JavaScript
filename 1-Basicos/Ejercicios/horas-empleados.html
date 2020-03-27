@@ -19,7 +19,8 @@
     var horaempleado = 3000;
 
     // paso 1, 2 y 3
-    
+        window.alert ("Programa horas empleados ingrese las horas totales de la jornada de la mañana, tarde y noche")
+
         var horasmañana = window.prompt("turno de la mañana");
         // While : Para bucle - isNaN (No es numerico) - ! Negación - !isNaN (Es numerico)
         while (isNaN(horasmañana)){
@@ -46,7 +47,8 @@
        
        var resultado = ( ( parseFloat(horasmañana) + parseFloat(horastarde) + parseFloat(horasnoche) ) * valorhoraempleado );
 
-       window.alert ("Su jornada es: " + horasmañana + horastarde + horasnoche + " Su valor total en dinero: " + resultado );
+        // Paso 5
+       window.alert ("Su jornada es: " + " Mañana: "  + horasmañana + " Tarde: "  + horastarde +" Noche: "  + horasnoche + " Su valor total en dinero es: " + resultado );
 </script>
     
 </body>
