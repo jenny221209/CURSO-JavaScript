@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom';
 
 // COMPONENTES
 import FormSumaSimple from "./views/basico/sections/FormSumaSimple";
+import FormSuma from "./views/basico/sections/FormSuma";
+
+
+
 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormSumaSimple/>
+    <FormSuma/>
   </React.StrictMode>,
   document.getElementById('root')
 );
